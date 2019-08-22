@@ -1,0 +1,3 @@
+docker-compose -f docker/docker-compose.yml up -d
+docker-compose -f docker/addons/influxdb-reader up -d
+docker-compose -f docker/addons/influxdb-writer up -d

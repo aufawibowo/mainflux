@@ -1,5 +1,10 @@
 # Mainflux
 
+```
+[UPDATE]
+now you can do ./up to start docker and ./down to shut down docker from /mainflux
+```
+
 [![build][ci-badge]][ci-url]
 [![go report card][grc-badge]][grc-url]
 [![coverage][cov-badge]][cov-url]
