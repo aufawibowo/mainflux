@@ -88,12 +88,12 @@ This proves that these provisioning commands were sent from the CLI to the Mainf
 Once system is provisioned, a `thing` can start sending messages on a `channel`:
 
 ```bash
-mainflux-cli messages send <channel_id> '[{"bn":"some-base-name:","bt":1.276020076001e+09, "bu":"A","bver":5, "n":"voltage","u":"V","v":120.1}, {"n":"current","t":-5,"v":1.2}, {"n":"current","t":-4,"v":1.3}]' <thing_key>
+mainflux-cli msg send <channel_id> '[{"bn":"some-base-name:","bt":1.276020076001e+09, "bu":"A","bver":5, "n":"voltage","u":"V","v":120.1}, {"n":"current","t":-5,"v":1.2}, {"n":"current","t":-4,"v":1.3}]' <thing_key>
 ```
 
 For example:
 ```bash
-mainflux-cli messages send b7bfc4b6-c18d-47c5-b343-98235c5acc19 '[{"bn":"some-base-name:","bt":1.276020076001e+09, "bu":"A","bver":5, "n":"voltage","u":"V","v":120.1}, {"n":"current","t":-5,"v":1.2}, {"n":"current","t":-4,"v":1.3}]' 69590b3a-9d76-4baa-adae-9b5fec0ea14f
+mainflux-cli msg send b7bfc4b6-c18d-47c5-b343-98235c5acc19 '[{"bn":"some-base-name:","bt":1.276020076001e+09, "bu":"A","bver":5, "n":"voltage","u":"V","v":120.1}, {"n":"current","t":-5,"v":1.2}, {"n":"current","t":-4,"v":1.3}]' 69590b3a-9d76-4baa-adae-9b5fec0ea14f
 ```
 
 In the Mainflux system terminal you should see following logs:
