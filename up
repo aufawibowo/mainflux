@@ -1,3 +1,5 @@
 docker-compose -f docker/docker-compose.yml up -d
-docker-compose -f docker/addons/influxdb-reader up -d
-docker-compose -f docker/addons/influxdb-writer up -d
+docker-compose -f docker/addons/mongodb-reader/docker-compose.yml up -d
+docker-compose -f docker/addons/mongodb-writer/docker-compose.yml up -d
+docker-compose -f docker/addons/influxdb-reader/docker-compose.yml up -d
+docker-compose -f docker/addons/influxdb-writer/docker-compose.yml up -d

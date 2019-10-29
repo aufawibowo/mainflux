@@ -1,0 +1,41 @@
+(sdk.User) {
+ Email: (string) (len=27) "kind_varahamihira@email.com",
+ Password: (string) (len=3) "123"
+}
+(string) (len=199) "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzIxMzU5NjQsImlhdCI6MTU3MjA5OTk2NCwiaXNzIjoibWFpbmZsdXgiLCJzdWIiOiJraW5kX3ZhcmFoYW1paGlyYUBlbWFpbC5jb20ifQ.aTi-O_k0vlbwDkNoLRk9xlM3Ohi7K6TtWJozEfDl-q0"
+([]sdk.Thing) (len=2 cap=2) {
+ (sdk.Thing) {
+  ID: (string) (len=36) "a1ba70b2-162b-4d23-bbce-f1f6f17592ce",
+  Type: (string) (len=6) "device",
+  Name: (string) (len=2) "d0",
+  Key: (string) (len=36) "a320136c-b285-4f77-9fa6-546c591622f2",
+  Metadata: (string) ""
+ },
+ (sdk.Thing) {
+  ID: (string) (len=36) "055d7623-8820-4574-95bc-03a8b4df9aba",
+  Type: (string) (len=3) "app",
+  Name: (string) (len=2) "d1",
+  Key: (string) (len=36) "d7247c2c-b91c-47fe-8be1-78f76713ae5e",
+  Metadata: (string) ""
+ }
+}
+([]sdk.Channel) (len=2 cap=2) {
+ (sdk.Channel) {
+  ID: (string) (len=36) "fd501678-4394-49f7-a1a1-705d8b86e0ee",
+  Name: (string) (len=2) "c0",
+  Things: ([]sdk.Thing) <nil>,
+  Metadata: (string) ""
+ },
+ (sdk.Channel) {
+  ID: (string) (len=36) "2ebadddd-882e-4980-afa3-89943c4da692",
+  Name: (string) (len=2) "c1",
+  Things: ([]sdk.Thing) <nil>,
+  Metadata: (string) ""
+ }
+}
+
+
+
+
+mainflux-cli messages send 'fd501678-4394-49f7-a1a1-705d8b86e0ee' '[{"bn":"some-base-name:","bt":1.276020076001e+09, "bu":"A","bver":5, "n":"voltage","u":"V","v":120.1}, {"n":"current","t":-5,"v":1.2}, {"n":"current","t":-4,"v":1.3}]' 'a1ba70b2-162b-4d23-bbce-f1f6f17592ce'
+
