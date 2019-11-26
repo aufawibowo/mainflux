@@ -23,3 +23,30 @@ ad04cc840c9e        redis:5.0-alpine                  "docker-entrypoint.s…"  
 d50c1c3789fc        nginx:1.16.0-alpine               "/entrypoint.sh"         20 minutes ago      Up 19 minutes       0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp, 0.0.0.0:8883->8883/tcp                                                                    mainflux-nginx
 c73c05983efe        postgres:10.8-alpine              "docker-entrypoint.s…"   20 minutes ago      Up 19 minutes       5432/tcp                                                                                                                            mainflux-things-db
 ecf630999f55        redis:5.0-alpine                  "docker-entrypoint.s…"   20 minutes ago      Up 19 minutes       6379/tcp                                                                                                                            mainflux-mqtt-redis
+
+
+aufawibowo@aufawibowo-VBox:~/smartcampus-mainflux$ ./up
+Creating mainflux-mqtt-redis   ... done
+Creating mainflux-nginx        ... done
+Creating mainflux-things-db    ... done
+Creating mainflux-es-redis     ... done
+Creating mainflux-users-db     ... done
+Creating mainflux-things-redis ... done
+Creating mainflux-jaeger       ... done
+Creating mainflux-nats         ... done
+Creating mainflux-ui           ... done
+Creating mainflux-normalizer   ... done
+Creating mainflux-users        ... done
+Creating mainflux-things       ... done
+Creating mainflux-ws           ... done
+Creating mainflux-coap         ... done
+Creating mainflux-http         ... done
+Creating mainflux-mqtt         ... done
+Creating mainflux-mongodb-reader ... done
+Creating mainflux-mongodb ... done
+Creating mainflux-mongodb-writer ... done
+Creating mainflux-influxdb-reader ... done
+Creating mainflux-influxdb ... done
+Creating mainflux-grafana         ... done
+Creating mainflux-influxdb-writer ... done
+
